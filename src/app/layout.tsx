@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google'
-import { ChakraProviderWithColorMode, ColorModeInit } from './theme/components'
+import { ChakraProviderWithColorMode, ColorModeInit, ThemeFlashPrevention } from './theme/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <ThemeFlashPrevention />
         <ColorModeInit />
       </head>
       <body className={inter.className}>

@@ -12,6 +12,7 @@ Follow these guidelines for code organization:
    - Prefer breaking functionality into small, focused components
    - If a piece of UI or logic is reusable or complex, make it a component
    - Place components where they make sense: features/ for component-specific ones, or app/features/ for shared ones
+   - Keep render blocks clean and declarative by moving complex logic into hooks and components
 
 2. Code Placement:
    - If the code is specific to one component/page, place it in that component's corresponding subfolder
