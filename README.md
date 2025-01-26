@@ -11,7 +11,7 @@ You will want a personal copy of this project in your own folder. We have a simp
 npx make-mine https://github.com/bladnman/starter-nextjs-simple.git my-project
 ```
 
-This will clone create a new folder `my-project` and copy the contents of this project into it. It will also remove the `.git` folder so you can start fresh and do a bit or renaming. `make-mine` can be used on any repo.
+This will clone create a new folder `my-project` and copy the contents of this project into it. It will also remove the `.git` folder so you can start fresh and do a bit or renaming. [make-mine](https://www.npmjs.com/package/make-mine) can be used on any repo.
 
 
 ## Development
