@@ -3,6 +3,17 @@
 ## About
 This is a sample starter project template built with Next.js. Use this as a foundation to quickly bootstrap your Next.js applications with a clean, minimal setup.
 
+## Make it your own
+You will want a personal copy of this project in your own folder. We have a simple solution for this.
+
+```bash
+# replace my-project with your project name
+npx make-mine https://github.com/bladnman/starter-nextjs-simple.git my-project
+```
+
+This will clone create a new folder `my-project` and copy the contents of this project into it. It will also remove the `.git` folder so you can start fresh and do a bit or renaming. `make-mine` can be used on any repo.
+
+
 ## Development
 To run the development server:
 
