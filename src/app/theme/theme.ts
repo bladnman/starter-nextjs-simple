@@ -63,8 +63,8 @@ export const theme = extendTheme(
     styles: {
       global: {
         'html, body': {
-          bg: 'gray.900',
-          color: 'white'
+          bg: 'chakra-body-bg',
+          color: 'chakra-body-text'
         }
       }
     }

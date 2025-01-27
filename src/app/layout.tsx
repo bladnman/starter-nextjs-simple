@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 import { Providers } from './providers.client'
-import { ColorModeInit, ThemeFlashPrevention } from './theme/components'
+import { ColorMode } from './theme/ColorMode.client'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,12 +15,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" data-theme="dark" style={{ colorScheme: 'dark' }}>
+    <html lang="en">
       <head>
-        <ThemeFlashPrevention />
+        <ColorMode />
       </head>
       <body className={inter.className}>
-        <ColorModeInit />
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -30,6 +30,7 @@ export default function Home() {
               rounded="lg"
               _hover={{ transform: 'translateY(-2px)', shadow: 'md' }}
               transition="all 0.2s"
+              colorScheme="brand"
             >
               <Text fontSize="3xl">🦁</Text>
               <Text>Animal Game</Text>
@@ -49,6 +50,7 @@ export default function Home() {
             rounded="lg"
             _hover={{ borderColor: 'brand.400' }}
             transition="all 0.2s"
+            color="gray.100"
           >
             <Text fontSize="2xl">✨</Text>
             <Text>Your Toy Here</Text>
