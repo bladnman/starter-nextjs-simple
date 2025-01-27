@@ -1,7 +1,7 @@
 import { extendTheme } from '@chakra-ui/react'
-import { config } from './config'
+import { theme as themeConfig } from './theme'
 
-export const theme = extendTheme({ config })
+export const theme = extendTheme(themeConfig)
 
 // For TypeScript support
 export type Theme = typeof theme 

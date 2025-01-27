@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
-import { ChakraProviderWithColorMode, ColorModeInit, ThemeFlashPrevention } from './theme/components'
+import { Providers } from './providers.client'
+import { ColorModeInit, ThemeFlashPrevention } from './theme/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,15 +15,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="dark" style={{ colorScheme: 'dark' }}>
       <head>
         <ThemeFlashPrevention />
-        <ColorModeInit />
       </head>
       <body className={inter.className}>
-        <ChakraProviderWithColorMode>
-          {children}
-        </ChakraProviderWithColorMode>
+        <ColorModeInit />
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

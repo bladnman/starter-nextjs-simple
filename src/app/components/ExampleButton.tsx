@@ -13,7 +13,7 @@ export function ExampleButton({ variant = 'solid', children, ...props }: Example
     <Button
       onClick={toggleColorMode}
       variant={variant}
-      colorScheme="blue"
+      colorScheme="brand"
       size="lg"
       {...props}
     >
