@@ -7,7 +7,7 @@ import { StyleGuide } from './features/StyleGuide'
 
 export default function Home() {
   return (
-    <Container maxW="container.xl" py={10} display="flex" alignItems="center" justifyContent="center" minH="100vh">
+    <Container maxW="container.xl" py={10} display="flex" justifyContent="center">
       <VStack gap={8} alignItems="center" maxW="4xl" w="full">
         <Box textAlign="center">
           <Heading size="2xl" mb={4}>
