@@ -14,14 +14,14 @@ npx make-mine https://github.com/bladnman/starter-nextjs-simple.git my-project
 This will clone create a new folder `my-project` and copy the contents of this project into it. It will also remove the `.git` folder so you can start fresh and do a bit or renaming. [make-mine](https://www.npmjs.com/package/make-mine) can be used on any repo.
 
 
-## Development
-To run the development server:
+## Install and Run Development
+To install and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
 ```
+or similar
 
 Then open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
