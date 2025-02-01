@@ -1,4 +1,16 @@
-## Folder Structure
+---
+description: Separate code logically using the following rules and structure
+globs: *.tsx, *.ts
+---
+# Code Separation
+Code separation is paramount. We do not want large page TSX files if you are creating sub components or elements within an object or page or route those should be broken out into the following folders mentioned below.
+
+As a general role, logic should always be extrapolated from presentation layer And often placed in something like a utile or hook file.
+
+Attempt to abstract both logic and visual layers where possible if it appears it is a reusable element place it in the appropriate level folder as defined below.
+
+
+# Folder Structure
 The following standard folders exist at both the app-level and component/page-level:
 
 - `features/` - For components and component-specific features

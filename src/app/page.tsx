@@ -1,61 +1,39 @@
 'use client'
 
-import { Box, Button, Container, Heading, SimpleGrid, Text, VStack } from '@chakra-ui/react'
+import { Box, Container, Heading, SimpleGrid, Text, VStack } from '@chakra-ui/react'
 import Link from 'next/link'
+import { GameButton } from './features/GameButton'
+import { StyleGuide } from './features/StyleGuide'
 
 export default function Home() {
   return (
     <Container maxW="container.xl" py={10} display="flex" alignItems="center" justifyContent="center" minH="100vh">
       <VStack gap={8} alignItems="center" maxW="4xl" w="full">
         <Box textAlign="center">
-          <Heading size="2xl" mb={4}>
+          <Heading size="2xl" mb={4} color="brand.text">
             Sample Playground
           </Heading>
-          <Text fontSize="xl" color="gray.600" mb={8}>
+          <Text fontSize="xl" color="secondary.text" mb={8}>
             Next.js with Chakra UI
           </Text>
         </Box>
 
         <SimpleGrid columns={{ base: 2, md: 3, lg: 4 }} spacing={6} w="full" justifyItems="center">
           <Link href="/AnimalGame" style={{ textDecoration: 'none' }}>
-            <Button
+            <GameButton
               as="div"
-              height="150px"
-              width="150px"
-              display="flex"
-              flexDirection="column"
-              gap={3}
-              border="1px"
-              borderColor="brand.300"
-              rounded="lg"
-              _hover={{ transform: 'translateY(-2px)', shadow: 'md' }}
-              transition="all 0.2s"
-              colorScheme="brand"
-            >
-              <Text fontSize="3xl">🦁</Text>
-              <Text>Animal Game</Text>
-            </Button>
+              emoji="🦁"
+              label="Animal Game"
+            />
           </Link>
 
-          <Button
-            height="150px"
-            width="150px"
-            display="flex"
-            flexDirection="column"
-            gap={3}
-            bg="transparent"
-            border="2px"
-            borderStyle="dashed"
-            borderColor="brand.300"
-            rounded="lg"
-            _hover={{ borderColor: 'brand.400' }}
-            transition="all 0.2s"
-            color="gray.100"
-          >
-            <Text fontSize="2xl">✨</Text>
-            <Text>Your Toy Here</Text>
-          </Button>
+          <GameButton
+            label="Your Toy Here"
+            isDashed
+          />
         </SimpleGrid>
+
+        <StyleGuide />
       </VStack>
     </Container>
   )
