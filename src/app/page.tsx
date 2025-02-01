@@ -30,6 +30,7 @@ export default function Home() {
           <GameButton
             label="Your Toy Here"
             isDashed
+            color="text"
           />
         </SimpleGrid>
 
