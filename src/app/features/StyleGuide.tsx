@@ -7,7 +7,10 @@ export function StyleGuide() {
 
   return (
     <VStack spacing={8} w="full" align="stretch">
-      <Heading size="lg" color="brand.text" textAlign="center">Style Guide</Heading>
+      <Heading size="lg" textAlign="center">Style Guide</Heading>
+      <Text fontSize="xl" textAlign="center" mb={8}>
+        Theme colors are defined in the theme.ts file.
+      </Text>
       
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8}>
         {/* Brand Color Section */}

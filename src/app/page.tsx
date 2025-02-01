@@ -10,10 +10,10 @@ export default function Home() {
     <Container maxW="container.xl" py={10} display="flex" alignItems="center" justifyContent="center" minH="100vh">
       <VStack gap={8} alignItems="center" maxW="4xl" w="full">
         <Box textAlign="center">
-          <Heading size="2xl" mb={4} color="brand.text">
+          <Heading size="2xl" mb={4}>
             Sample Playground
           </Heading>
-          <Text fontSize="xl" color="secondary.text" mb={8}>
+          <Text fontSize="xl" mb={8}>
             Next.js with Chakra UI
           </Text>
         </Box>
@@ -33,6 +33,8 @@ export default function Home() {
           />
         </SimpleGrid>
 
+        {/* STYLE GUIDE */}
+        <Box w="full" h="1px" bg="gray.200" my={8} />
         <StyleGuide />
       </VStack>
     </Container>
