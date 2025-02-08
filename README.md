@@ -25,6 +25,15 @@ or similar
 
 Then open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Package Versioning
+This starter is configured to always use the latest compatible versions of its dependencies. Here's how it works:
+
+1. The `package.json` uses caret (^) versioning to allow minor and patch updates while preventing breaking changes
+2. We intentionally don't track `package-lock.json` to ensure you get the latest compatible versions when you install
+3. After initial install, you can run `npm run update-deps` to update all dependencies to their latest compatible versions
+
+This approach ensures your project starts with up-to-date dependencies while maintaining stability through semantic versioning.
+
 ## References
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Next.js Learn](https://nextjs.org/learn)
